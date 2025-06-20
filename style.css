@@ -1,0 +1,129 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c3ecf7, #fef6f9);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.btn {
+  padding: 12px 16px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0197a7;
+}
+
+.btn-danger {
+  background: #ff4d4f;
+}
+
+.btn-danger:hover {
+  background: #d9363e;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.task {
+  background: #f8f9fa;
+  border: 1px solid #e1e1e1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.task:hover {
+  transform: scale(1.01);
+  background: #eef7fa;
+}
+
+.actions button {
+  margin-left: 8px;
+}
+
+#logout {
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #ff7675;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+#logout:hover {
+  background: #d63031;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -8px;
+}
